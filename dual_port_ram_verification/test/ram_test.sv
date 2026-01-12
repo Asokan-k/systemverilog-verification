@@ -1,12 +1,7 @@
-//======================================================
-// RAM TB Testcases
-//======================================================
-
 import ram_pkg::*;
 
-//------------------------------------------------------
 // Constraint class : ram_trans_crt
-//------------------------------------------------------
+
 class ram_trans_crt extends ram_trans;
 
   // Constraints for wr_address and rd_address
@@ -20,10 +15,8 @@ class ram_trans_crt extends ram_trans;
 
 endclass : ram_trans_crt
 
-
-//------------------------------------------------------
 // Constraint class : ram_trans_cwt
-//------------------------------------------------------
+
 class ram_trans_cwt extends ram_trans;
 
   // Constraints for wr_address, rd_address and data
@@ -41,10 +34,8 @@ class ram_trans_cwt extends ram_trans;
 
 endclass : ram_trans_cwt
 
-
-//------------------------------------------------------
 // Test Class
-//------------------------------------------------------
+
 class test;
 
   // Virtual interface handles
@@ -107,5 +98,6 @@ class test;
 
     end
   endtask : build_and_run
+
 
 endclass : test
