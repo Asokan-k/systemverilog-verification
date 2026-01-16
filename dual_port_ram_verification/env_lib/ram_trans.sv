@@ -60,13 +60,6 @@ class ram_trans;
     this.display("\tRANDOMIZED DATA");
 
   endfunction : post_randomize
-  
-  
-class ram_trans;
-
-  // Class properties (assumed declared earlier in the page)
-  rand bit [7:0] rd_address;
-  rand bit [7:0] data_out;
 
   // Compare function
   function bit compare(input ram_trans rcv, output string message);
@@ -90,7 +83,5 @@ class ram_trans;
     message = "SUCCESSFULLY COMPARED";
     return (1);
   endfunction : compare
-
-endclass : ram_trans
 
 endclass : ram_trans
